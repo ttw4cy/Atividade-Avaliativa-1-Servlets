@@ -12,7 +12,7 @@ import br.ufscar.dc.dsw.domain.Usuario;
 
 public class UsuarioDAO extends GenericDAO {
 	public void insert(Usuario usuario){
-        String sql = "INSERT INTO usuario (username, password, cpf, nome, telefone, sexo, datanasc, role) VALUES (?, ?, ?, ?) ";
+        String sql = "INSERT INTO Usuario (username, password, cpf, nome, telefone, sexo, datanasc, role) VALUES (?, ?, ?, ?) ";
 
         try{
             Connection conn = this.getConnection();
@@ -67,7 +67,7 @@ public class UsuarioDAO extends GenericDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return usuario;
+        return listaUsuarios;
     }
 
     public void update(Usuario usuario) {
