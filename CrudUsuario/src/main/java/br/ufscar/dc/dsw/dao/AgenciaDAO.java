@@ -23,9 +23,9 @@ public class AgenciaDAO extends GenericDAO {
             statement.setString(1, usuario.getEmail());
             statement.setString(2, usuario.getSenha());
             statement.setString(3, usuario.getCnpj());
-            statement.setString(5, usuario.getNome());
-            statement.setString(6, usuario.getDescricao());
-            statement.setString(9, usuario.getRole());
+            statement.setString(4, usuario.getNome());
+            statement.setString(5, usuario.getDescricao());
+            statement.setString(6, usuario.getRole());
             statement.executeUpdate();
 
             statement.close();
@@ -78,10 +78,10 @@ public class AgenciaDAO extends GenericDAO {
             statement.setString(1, agencia.getEmail());
             statement.setString(2, agencia.getsenha());
             statement.setString(3, agencia.getCnpj());
-            statement.setString(5, agencia.getNome());
-            statement.setString(6, agencia.getDescricao());
-            statement.setString(9, agencia.getRole());
-            statement.setLong(10, agencia.getId());
+            statement.setString(4, agencia.getNome());
+            statement.setString(5, agencia.getDescricao());
+            statement.setString(6, agencia.getRole());
+            statement.setLong(7, agencia.getId());
             statement.executeUpdate();
 
             statement.close();
