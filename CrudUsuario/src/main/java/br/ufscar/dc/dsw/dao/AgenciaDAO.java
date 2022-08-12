@@ -64,7 +64,7 @@ public class AgenciaDAO extends GenericDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return agencia;
+        return listaAgencia;
     }
 
     public void update(Agencia agencia) {
