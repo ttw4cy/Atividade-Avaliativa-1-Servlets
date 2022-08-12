@@ -3,7 +3,7 @@ package br.ufscar.dc.dsw.domain;
 public class Usuario {
 	private Long id;
 	private String username;
-	private String senha;
+	private String password;
 	private String cpf;
 	private String nome;
 	private String telefone;
@@ -11,6 +11,46 @@ public class Usuario {
 	private String datanasc;
 	private String role;
 	
+	public Usuario(Long id) {
+        this.id = id;
+    }
+
+    
+
+   
+	public Usuario(String username, String password, String cpf, String nome, String telefone, String sexo,
+			String datanasc, String role) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.cpf = cpf;
+		this.nome = nome;
+		this.telefone = telefone;
+		this.sexo = sexo;
+		this.datanasc = datanasc;
+		this.role = role;
+	}
+
+
+
+
+	public Usuario(Long id, String username, String password, String cpf, String nome, String telefone, String sexo,
+			String datanasc, String role) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.cpf = cpf;
+		this.nome = nome;
+		this.telefone = telefone;
+		this.sexo = sexo;
+		this.datanasc = datanasc;
+		this.role = role;
+	}
+
+
+
+
 	public Long getId() {
 		return id;
 	}
@@ -23,11 +63,11 @@ public class Usuario {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getSenha() {
-		return senha;
+	public String getPassword() {
+		return password;
 	}
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getCpf() {
 		return cpf;
