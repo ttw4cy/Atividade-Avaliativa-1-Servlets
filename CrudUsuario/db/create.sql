@@ -27,3 +27,14 @@ CREATE TABLE Agencia{
     role VARCHAR(20) NOT NULL, 
     PRIMARY KEY (id)
 };
+
+CREATE TABLE Pacote {
+    Codigo int(55) NOT NULL AUTO_INCREMENT,
+    CNPJ int(15) NOT NULL,
+    destino varchar(255) NOT NULL,
+    dataPartida int(10) NOT NULL,
+    Duracao int (20) NOT NULL,
+    valor int (10) NOT NULL,
+    foto varchar(255),
+    PRIMARY KEY (codigo)
+};
